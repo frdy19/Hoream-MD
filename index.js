@@ -628,3 +628,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
+require("http").createServer((_, res) => res.end("By Ferrzxx")).listen(8080)
